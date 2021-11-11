@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian-Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav__container">
+        <div class="nav__content container">
+          <div class="logo">
+            <h2>
+              <span class="verde">La</span> <span>Vita</span>
+              <span class="rojo">Dolce</span>
+            </h2>
+          </div>
+          <nav class="nav ocultar">
+            <a href="#inicio">Inicio</a>
+            <a href="#about">Sobre nosotros</a>
+            <a href="#menu">Menú</a>
+            <a href="#chef">Chef</a>
+            <a href="#contact">Contacto</a>
+          </nav>
+          <div class="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="content__header">
+        <div class="container__header">
+          <div class="text__header">
+            <h2>Accoglienza</h2>
+            <a href="#" class="btn bordes">il nostro menú</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="assets/video/bg_video.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+    <div class="container__nosotros container">
+      <div class="text__nosotros">
+        <p class="bienvenida">Bienvenido al</p>
+        <h1>Ristorante La Vita Dolce</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem at
+          aliquid, voluptates, laboriosam pariatur commodi alias ad neque, minus
+          quis suscipit recusandae perferendis consequuntur dolores. Veritatis
+          ex earum quod libero?
+        </p>
+        <a href="#" class="btn btn-rojo"> Contactar </a>
+      </div>
+      <div class="img__nosotros">
+        <div class="img-1">
+          <img data-src="assets/img/nosotros1.webp" alt="Mujer con pizza" />
+        </div>
+        <div class="img-2">
+          <img data-src="assets/img/nosotros2.webp" alt="Mujeres con pizza" />
+          <img data-src="assets/img/nosotros3.webp" alt="Plato con spaghetti" />
+        </div>
+      </div>
+    </div>
+    <section class="menu container">
+      <h2 class="text-platillos">Platillos populares</h2>
+      <div class="btn-platillos">
+        <button class="all btn btn-verde">Todos</button>
+        <button class="salads btn btn-verde">Ensaladas</button>
+        <button class="pastas btn btn-verde">Pastas</button>
+        <button class="pizzas btn btn-verde">Pizzas</button>
+        <button class="postres btn btn-verde">Postres</button>
+      </div>
+      <div class="platillos">
+        <div class="platillo" data-platillo="salad">
+          <img data-src="assets/img/ensalada.webp" alt="ensalada" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="salad">
+          <img data-src="assets/img/ensalada2.webp" alt="ensalada" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="salad">
+          <img data-src="assets/img/ensalada2.webp" alt="ensalada" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta1.webp" alt="pasta" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta2.webp" alt="pasta" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="assets/img/pasta2.webp" alt="pasta" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza1.webp" alt="pizza" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza2.webp" alt="pizza" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="assets/img/pizza2.webp" alt="pizza" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres1.webp" alt="postre" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres2.webp" alt="postre" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="assets/img/postres3.webp" alt="postre" />
+          <h3>Quinoa</h3>
+          <p>Quinoa, cereza, tomate, aceitunas, cereal</p>
+          <div class="price">
+            <p>$40.00</p>
+            <button><i class="bx bx-basket"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separator">
+      <div class="content__separator container">
+        <h2>Comida Italiana para empezar el día</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.
+        </p>
+        <a href="#" class="btn btn-verde">Ordenar ahora</a>
+      </div>
+    </div>
+    <section class="chef container">
+      <h2>Chef ejecutivo</h2>
+      <div class="content-chef">
+        <div class="text-chef">
+          <h3>
+            La excelencia está en la diversidad y el modo de progresar es
+            conocer y comparar las diversidades de productos, culturas y
+            técnicas
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            voluptatibus odit eum natus, magni dolore harum asperiores
+            perspiciatis culpa doloremque laudantium exercitationem rerum
+            voluptates ratione enim commodi modi! Nisi, molestiae.
+          </p>
+          <a href="#" class="btn btn-verde">Leer más</a>
+        </div>
+        <picture class="img-chef">
+          <img data-src="assets/img/chef.webp" alt="foto del chef" />
+        </picture>
+      </div>
+    </section>
+    <div class="form-contact container">
+      <div class="info-contact">
+        <h3>Contáctanos</h3>
+        <p><i class="bx bxs-map-pin"></i>23.Roma</p>
+        <p><i class="bx bx-mail-send"></i>correo@correo.com</p>
+        <p><i class="bx bx-phone"></i>123 456 7890</p>
+        <div class="social">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+        </div>
+      </div>
+      <form class="form">
+        <div class="input-form">
+          <label for="name">Nombre</label>
+          <input type="text" placeholder="Nombre" id="name" />
+        </div>
+        <div class="input-form">
+          <label for="email">Correo</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ejemplo@ejemplo.com"
+          />
+        </div>
+        <div class="input-form">
+          <label for="tel">Teléfono</label>
+          <input type="tel" name="tel" id="tel" placeholder="1234567890" />
+        </div>
+        <div class="input-form">
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Mensaje"
+          ></textarea>
+        </div>
+        <div class="">
+          <input type="submit" value="Enviar" class="btn btn-verde" />
+        </div>
+      </form>
+    </div>
+    <div class="foot-page ">
+      <div class="content-foot container">
+        <div class="info">
+          <h3>Direccion</h3>
+          <p>23. Roma</p>
+        </div>
+        <div class="info">
+          <h3>Dias Especiales</h3>
+          <p>Sabados y Jueves 11Pm</p>
+          <p>123 456 7890</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes - Domingo</p>
+          <div class="social-foot social">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram"></i>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <input type="email" placeholder="Correo" />
+          <input type="submit" value="Suscribirse" class="btn btn-verde" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        Todos los derechos reservados Ristorante La vita dolce &copy; 2021
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

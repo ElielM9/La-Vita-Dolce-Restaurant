@@ -1,0 +1,165 @@
+@use "config/fonts" as f;
+@use "config/colors" as c;
+@use "mixins/breakpoints" as m;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: f.$titulos;
+  font-size: 7rem;
+}
+
+h3,
+p,
+a {
+  font-family: f.$parrafos;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.verde {
+  color: c.$verde;
+}
+
+.rojo {
+  color: c.$rojo;
+}
+
+.ocultar {
+  display: none;
+}
+
+.btn {
+  color: c.$blanco;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  @include m.tablet {
+    font-size: 2.2rem;
+  }
+}
+.btn-rojo {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: c.$rojo;
+  font-weight: bold;
+  &:hover {
+    background-color: c.$blanco;
+    border: 2px solid c.$verde;
+    color: c.$verde;
+  }
+}
+
+.btn-verde {
+  background-color: c.$verde;
+  border: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: f.$parrafos;
+  &:hover {
+    background-color: c.$rojo;
+  }
+}
+
+.bordes {
+  border: 3px solid c.$blanco;
+  border-radius: 5px;
+  &:hover {
+    color: c.$verde;
+    background-color: c.$blanco;
+  }
+  @include m.tablet {
+    border: 4px solid c.$blanco;
+  }
+}
+
+.btnClose {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  user-select: none;
+  color: c.$blanco;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.full-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

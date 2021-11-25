@@ -1,0 +1,65 @@
+@use "config/colors" as c;
+@use "mixins/breakpoints" as m;
+
+.separator {
+  position: relative;
+  background-image: url(../assets/img/ensalada.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  &__content {
+    padding: 5rem;
+    h2 {
+      font-size: 3.2rem;
+      color: c.$blanco;
+    }
+    p {
+      color: c.$blanco;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+/* CHEF */
+
+.chef {
+  &__content {
+    @include m.tablet {
+      display: flex;
+    }
+  }
+  h2 {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: c.$rojo;
+    color: c.$blanco;
+    font-size: 3.2rem;
+  }
+  &__text,
+  &__img {
+    @include m.tablet {
+      flex: 0 0 calc(50% - 1rem);
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

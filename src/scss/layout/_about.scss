@@ -1,0 +1,48 @@
+@use "config/colors" as c;
+@use "mixins/breakpoints" as m;
+
+.about {
+  padding-top: 4rem;
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text,
+  &__img {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  &__text {
+    .bienvenida {
+      font-size: 4rem;
+      color: c.$verde;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+    .bienvenida,
+    h1 {
+      @include m.tablet {
+        text-align: left;
+      }
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    .img-1,
+    .img-2 {
+      flex: 0 0 calc(50% - 1rem);
+    }
+    .img-2 {
+      margin-bottom: 1rem;
+    }
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+}

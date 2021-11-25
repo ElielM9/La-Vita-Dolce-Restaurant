@@ -1,0 +1,74 @@
+@use "config/colors" as c;
+@use "mixins/breakpoints" as m;
+
+.header__nav {
+  background-color: c.$oscuro;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo,
+  .nav {
+    h2,
+    a {
+      color: c.$blanco;
+    }
+  }
+  .logo {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .hamburguer {
+    span {
+      display: block;
+      background-color: c.$blanco;
+      width: 5rem;
+      height: 0.5rem;
+      margin: 1rem 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 4rem;
+  background-color: c.$oscuro;
+  animation: desplazar 0.5s ease-in-out;
+  @include m.tablet {
+    width: 40rem;
+  }
+  a {
+    display: block;
+    padding: 1.5rem;
+    padding-left: 4rem;
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    transition: 0.3s ease-in-out;
+    &:first-of-type {
+      margin-top: 5rem;
+    }
+    &:nth-child(even) {
+      &:hover {
+        color: c.$rojo;
+      }
+    }
+    &:nth-child(odd) {
+      &:hover {
+        color: c.$verde;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@use "config/colors" as c;
+@use "config/fonts" as f;
+@use "mixins/breakpoints" as m;
+
+.contact {
+  padding-top: 5rem;
+  @include m.tablet {
+    display: flex;
+  }
+  &__info,
+  .form {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: c.$oscuro;
+    padding: 5rem;
+    h3,
+    p,
+    i {
+      color: c.$blanco;
+    }
+    h3 {
+      font-size: 4rem;
+      font-family: f.$titulos;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    i {
+      margin-right: 1rem;
+    }
+
+    .social {
+      font-size: 3rem;
+    }
+  }
+}
+
+.form {
+  padding: 5rem;
+  &__input {
+    label {
+      display: block;
+      font-size: 2rem;
+      font-family: f.$parrafos;
+      margin-bottom: 1rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem 1.6rem;
+      font-family: f.$parrafos;
+      border: 1px solid #e1e1;
+      border-radius: 5px;
+      outline: none;
+    }
+    textarea{
+        height: 15rem;
+        resize: none;
+    }
+  }
+}
+
+

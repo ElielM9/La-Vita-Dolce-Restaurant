@@ -1,0 +1,56 @@
+@use "config/colors" as c;
+@use "config/fonts" as f;
+@use "mixins/breakpoints" as m;
+
+.foot {
+  margin-top: 5rem;
+  padding: 5rem;
+  background: rgb(20, 20, 20);
+  &__content {
+    @include m.tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__info {
+    flex: 0 0 calc(25% - 1rem);
+    margin-bottom: 2rem;
+    h3,
+    p {
+      text-align: center;
+      color: c.$blanco;
+    }
+    h3 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    input {
+      width: 100%;
+      &[type="email"] {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        font-family: f.$parrafos;
+        outline: none;
+      }
+      &[type="submit"] {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+  &__social {
+    text-align: center;
+  }
+}
+
+.footer {
+  text-align: center;
+  color: c.$blanco;
+  font-size: 2rem;
+  padding: 2rem;
+  background: c.$oscuro;
+}
